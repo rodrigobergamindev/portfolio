@@ -18,18 +18,23 @@ const ContainerHeader = styled(Container)`
        flex-direction: column;
         align-items: center;
         justify-content: center;
-       background-color: #353b48;
+        background-color: #2f3640;
 
    }
    img {
        z-index: 1;
-       border-radius: 0.7em;
-       border: 3px solid #f5f6fa;
+       border-radius: 20em;
        margin-top: 7em;
        margin-bottom: -8em;
        max-weight: 15em;
        max-width: 15em;
-       box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+       transition: 1s;
+       border: 9px solid #0984e3;
+       transition: all .9s ease-in-out;
+
+       &:hover {
+        transform: scale(1.2)
+       }
    }
 
    
@@ -55,7 +60,6 @@ const ContainerNav = styled(Container)`
     flex-direction: row;
     list-style-type:none;
     justify-content: center;
-    padding: 0.8em;
     ul {
         background-color: #353b48;
         display:flex;
@@ -65,7 +69,11 @@ const ContainerNav = styled(Container)`
 
         
         li {
+            padding: 0.8em;
             background-color: #353b48;
+            &:hover, active {
+               color:#0984e3;
+            }
         }
     }
 
