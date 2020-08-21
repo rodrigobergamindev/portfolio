@@ -1,17 +1,16 @@
 import React from 'react'
 import {ContainerHeader} from '../style/index.js'
-
+import avatar from '../assets/avatar.jpg'
 
 export default function Header() {
     return (
         <ContainerHeader>
-            <div style={{backgroundColor:'#353B48'}}>
-            22
-            </div>
+            <header>
+                <img src={avatar} alt="perfil"/>
+            </header>
 
-            <div style={{backgroundColor:'#273C75'}}>
-            22
-            </div>
+            <h1>Rodrigo Bergamin</h1>
+            <h3>FULL STACK DEVELOPER</h3>
         </ContainerHeader>
     )
 }
