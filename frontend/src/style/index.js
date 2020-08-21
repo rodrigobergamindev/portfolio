@@ -23,26 +23,43 @@ const ContainerHeader = styled(Container)`
    }
    img {
        z-index: 1;
-       border-radius: 20em;
-       margin-top: 7em;
-       margin-bottom: -8em;
-       max-weight: 15em;
-       max-width: 15em;
+       border-radius: 50%;
+       margin-top: 4em;
+       max-weight: 18em;
+       max-width: 18em;
        transition: 1s;
-       border: 9px solid #0984e3;
-       transition: all .9s ease-in-out;
+       border: 0.5em solid #0984e3;
+
+       @media only screen and (max-width: 600px) {
+        max-weight: 14em;
+        max-width: 14em;
+      }
+
+      @media only screen and (max-width: 350px) {
+        max-weight: 12em;
+        max-width: 12em;
+      }
 
        &:hover {
+        transition: all .9s ease-in-out;
         transform: scale(1.2)
        }
    }
 
    
    h1{
-    margin-top: 2.2em;
+    margin-top: 0.9em;
     text-align: center;
     font-size: 5em;
     font-weight: 400;
+
+    @media only screen and (max-width: 600px) {
+        font-size: 3em;
+      }
+
+      @media only screen and (max-width: 350px) {
+        font-size: 3em;
+      }
 
 }
 
@@ -51,6 +68,14 @@ const ContainerHeader = styled(Container)`
         font-size: 2.5em;
         margin-top: 0.5em;
         text-align: center;
+
+        @media only screen and (max-width: 600px) {
+            font-size: 1.4em;
+          }
+    
+          @media only screen and (max-width: 350px) {
+            font-size: 1.2em;
+          }
     }
 `
 
@@ -66,6 +91,7 @@ const ContainerNav = styled(Container)`
         list-style-type:none;
         justify-content: space-around;
         width: 35em;
+        flex-wrap: wrap;
 
         
         li {
