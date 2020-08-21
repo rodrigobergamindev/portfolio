@@ -41,8 +41,8 @@ const ContainerHeader = styled(Container)`
       }
 
        &:hover {
-        transition: all .9s ease-in-out;
-        transform: scale(1.2)
+        transition: all .5s ease-in-out;
+        transform: scale(1.1);
        }
    }
 
