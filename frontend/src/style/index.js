@@ -18,24 +18,22 @@ const ContainerHeader = styled(Container)`
        flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #2f3640;
 
    }
    img {
-       z-index: 1;
        border-radius: 50%;
        margin-top: 4em;
        max-weight: 18em;
        max-width: 18em;
        transition: 1s;
-       border: 0.5em solid #0984e3;
+       border: 0.5em solid #40407a;
 
        @media only screen and (max-width: 600px) {
         max-weight: 14em;
         max-width: 14em;
       }
 
-      @media only screen and (max-width: 350px) {
+      @media only screen and (max-width: 370px) {
         max-weight: 12em;
         max-width: 12em;
       }
@@ -57,8 +55,8 @@ const ContainerHeader = styled(Container)`
         font-size: 3em;
       }
 
-      @media only screen and (max-width: 350px) {
-        font-size: 3em;
+      @media only screen and (max-width: 370px) {
+        font-size: 2em;
       }
 
 }
@@ -79,6 +77,8 @@ const ContainerHeader = styled(Container)`
     }
 `
 
+/**NAVBAR */
+
 const ContainerNav = styled(Container)`
     font-weight: 400;
     background-color: #353b48;
@@ -98,7 +98,7 @@ const ContainerNav = styled(Container)`
             padding: 0.8em;
             background-color: #353b48;
             &:hover, active {
-               color:#0984e3;
+               color:#40407a;
             }
         }
     }
@@ -106,4 +106,51 @@ const ContainerNav = styled(Container)`
 `
 
 
-export {Container, ContainerHeader, ContainerNav}
+const ContainerCards = styled(Container)`
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items:center;
+
+
+`
+
+const ContainerTech = styled(Container) `
+    justify-content: space-around;
+    margin-top: 3em;
+    h1 {
+      font-weight: 400;
+      font-size: 2.7em;
+      text-align: center;
+      color: white;
+      margin-bottom: 2em;
+    }
+`
+
+const Card = styled.div`
+
+    max-width: 250px;
+    height: 410px;
+    border-radius:4%;
+    background-color:#f5f6fa;
+    color: #2d3436;
+    padding: 0.4em;
+    word-wrap: break-word;
+
+    display: flex;
+    flex-direction: column;
+
+    hr {
+      top: 0;
+    }
+    img {
+      margin-left: .8em;
+      max-width: 50px;
+      border-radius: 50%;
+    }
+`
+
+
+
+
+export {Container, ContainerHeader, ContainerNav, ContainerCards, ContainerTech, Card}
