@@ -13,18 +13,12 @@ import BuildIcon from '@material-ui/icons/Build';
 
 import { createMuiTheme } from '@material-ui/core/styles';
 
-const theme = createMuiTheme({
-  palette: {
-    primary: {
-      main: '#f5f6fa',
-    },
-  },
-});
 
 
 const useStyles = makeStyles({
     root: {
       flexGrow: 1,
+      maxWidth: 500,
       background: 'linear-gradient(45deg, #2196F3 30%, #21CBF3 90%)',
       boxShadow: 'none',
     }
