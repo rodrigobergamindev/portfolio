@@ -18,10 +18,10 @@ import { createMuiTheme } from '@material-ui/core/styles';
 const useStyles = makeStyles({
     root: {
       flexGrow: 1,
-      maxWidth: 500,
-      background: 'linear-gradient(45deg, #2196F3 30%, #21CBF3 90%)',
+      maxWidth: 900,
+      backgroundColor: 'transparent',
       boxShadow: 'none',
-    }
+    }   
   });
   
   export default function IconTabs() {
@@ -42,11 +42,10 @@ const useStyles = makeStyles({
           textColor="primary"
           aria-label="icon tabs example"
         >
-          <Tab icon={<HomeIcon style={{color: '#f5f6fa'}} />} aria-label="phone" />
-          <Tab icon={<BuildIcon style={{color: '#f5f6fa'}} />} aria-label="favorite" />
-          <Tab icon={<CodeIcon style={{color: '#f5f6fa'}} />} aria-label="person" />
-          <Tab icon={<PersonPinIcon style={{color: '#f5f6fa'}} />} aria-label="person" />
-          <Tab icon={<PhoneIcon style={{color: '#f5f6fa'}} />} aria-label="person" />
+          <Tab icon={<HomeIcon style={{color: '#2196f3', fontSize:'2.5em'}}  />} aria-label="phone" />
+          <Tab icon={<CodeIcon style={{color: '#2196f3', fontSize:'2.5em'}} />} aria-label="person" />
+          <Tab icon={<PersonPinIcon style={{color: '#2196f3', fontSize:'2.5em'}} />} aria-label="person" />
+          <Tab icon={<PhoneIcon style={{color: '#2196f3', fontSize:'2.5em'}} />} aria-label="person" />
         </Tabs>
       </Paper>
     );

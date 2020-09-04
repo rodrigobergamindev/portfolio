@@ -5,11 +5,27 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import Navbar from './Navbar'
+import {ContainerNavbar, Container, ContainerHeader, AreaButtons} from '../style/index.js'
+import Avatar from './Avatar'
+import Button from './Button'
 
 export default function Header() {
     return (
-            <div>
+        <Container>
+            <ContainerNavbar>
                 <Navbar/>
-            </div>
+            </ContainerNavbar>
+
+            <ContainerHeader>
+                <Avatar/>
+
+                <h3>RODRIGO BERGAMIN</h3>
+                <h6>FULL STACK <span className="spot">WEB DEVELOPER</span></h6>
+                <p>HTML/CSS | ReactJS | NodeJS | MongoDB | Java</p>
+
+                <Button text={"VIEW MY WORK"}></Button>
+            </ContainerHeader>
+
+        </Container>
     )
 }
