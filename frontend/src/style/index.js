@@ -7,56 +7,60 @@ const Container = styled.div`
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-`
+    background-color: transparent;
 
-const ContainerNavbar = styled(Container)`
-    box-shadow: 0 20px 6px rgba(0,0,0,0.16), 0 20px 20px rgba(0,0,0,0.23);
-    background-color: #f5f6fa;
 `
 
 const ContainerHeader = styled(Container)`  
-    font-size: 4em;
-    padding: 1.5em;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin-top: 50px;
+    font-size: 1.1em;
     color:#f5f6fa;
     text-align: center;
+    font-family: 'Jaldi', sans-serif;
     flex-direction:column;
 
-    background: linear-gradient(to right, #005AA7 , #FFFDE4); 
 
-    p {
-        font-weight: 700;
-        font-size: 0.3em;
-        margin-top: 2em;
-        border: 2px solid white;
-        border-radius: 2em;
-        padding: 1em;
+    li {
+        padding-top: 20px;
+        background-color: transparent,
+        border: 1px solid white,
+        border-radius: 50,
+        color: white,
+        height: 48,
+        padding: 30px,
+        width: 350,
+        font-family: Roboto,
+        font-weight: 300,
+        fontSize: 1.09em
     }
 
-    h3 {
-        margin-top: 0.7em;
-        font-weight: 100;
-        font-size: 0.58em;
-        letter-spacing: 2px;
+    h7 {
+        margin-bottom: 30px;
     }
 
-    h6{
-        margin-top: 0.3em;
-        font-size: 0.25em;
-        font-weight: 500;
-        letter-spacing: 2px;
-
-        .spot {
-            color: #2196f3;
-        }
+    footer {
+        margin-top: 40px;
+        font-size: 0.6em;
+        font-family: 'Roboto Slab', serif;
     }
 
+    a:visited {
+        color: #000;
+    }
+    
+    a:hover {
+        color: #000;
+    }
+   
+    a:active {
+        color: #000;
+    }
 `
 
 
-const ContainerPortfolio = styled(Container)`
-    width: 100%;
-    background-color: #f5f6fa;
-    flex-direction: column;
-`
-
-export {Container, ContainerNavbar, ContainerHeader, ContainerPortfolio}
+export {Container, ContainerHeader}

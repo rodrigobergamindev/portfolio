@@ -1,14 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500;582&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
 
 * {
   margin:0;
   padding:0;
   outline:0;
-  font-family: 'Roboto', sans-serif;
+  list-style-type: none;
+  text-decoration:none; 
+  
+
 }
 
+
 html, body {
-  height: 100%;
+  background: linear-gradient(to right, #D63031 , #FF9A90);
 }
+
