@@ -11,7 +11,8 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
     root: {
-      fontSize: '1.02em'
+      fontSize: '1.02em',
+      padding: '5px',
     },
   });
   
@@ -19,8 +20,8 @@ const useStyles = makeStyles({
 export default function Header() {
     const classes = useStyles();
     const urlInsta = 'https://www.instagram.com/lojinha_da_mayumi/'
-    const urlCatalogoACO = 'https://drive.google.com/file/d/1aydSdXc9n35hJWqV3XhaQCMxiu0PuC57/view'
-    const urlCatalogoPRATA = 'https://drive.google.com/file/d/1CelcVNHta_npUcbAHRWb23oFy0sAI70r/view'
+    const urlCatalogoACO = 'https://drive.google.com/file/d/1zwC9bmrPtXEef0s2Yssns0kCOdAiTAoe/view?usp=sharing'
+    const urlCatalogoPRATA = 'https://drive.google.com/file/d/1FXEgeF2gkruskIH1_iWDHZH50sY5PxPh/view?usp=sharing'
     const urlWhatsApp = 'https://api.whatsapp.com/send?phone=5511983478844&text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20as%20pe%C3%A7as%20da%20loja'
     return (
         <Container>
